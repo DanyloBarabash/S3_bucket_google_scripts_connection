@@ -22,7 +22,7 @@ function myFunction() {
 
 function getCSV(name){
   try{
-      S3.init("AKIA4WMQN3C5G3LWLFRF","OReCugv2kd5r1p18ZJY97euMdF1y+5PsIS39LMgu")
+      S3.init("MY_ACCESS_KEY", "MY_SECRET_KEY")
       return S3.getObject("google-sheet-proj", name, "us-east-1").toString()
   }
   catch (error) {
